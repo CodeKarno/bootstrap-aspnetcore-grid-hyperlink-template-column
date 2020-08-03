@@ -16,7 +16,7 @@ jobs:
       with:
         dotnet-version: 3.1.301
     - name: Install dependencies
-      run: dotnet restore  -s https://api.nuget.org/v3/index.json -source https://nuget.devexpress.com/qdGVjXN5ay3NvgmPO9XHcZYPanIdW2flzwRuIQV3cZuTrB86da/api ./CS/T617530.sln
+      run: dotnet restore  -s https://api.nuget.org/v3/index.json -s https://nuget.devexpress.com/qdGVjXN5ay3NvgmPO9XHcZYPanIdW2flzwRuIQV3cZuTrB86da/api ./CS/T617530.sln
     - name: Build
       run: dotnet build --configuration Release --no-restore
     - name: Test
